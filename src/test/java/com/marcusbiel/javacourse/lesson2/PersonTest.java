@@ -29,4 +29,31 @@ public class PersonTest {
 
         assertEquals(4, Person.numberOfPersons());
     }
+
+    @Test
+    public void shouldReturnNumberOfPersonsInLoop() {
+        Person person1;
+
+        int i = 0;
+        do {
+            person1 = new Person();
+            i++;
+        } while (i < 4);
+        assertEquals(4, Person.numberOfPersons());
+    }
+
+    @Test
+    public void demonstrateArrays() {
+        Person[] persons = new Person[4];
+        Person myPerson = new Person();
+        persons[0] = new Person();
+        persons[2] = new Person();
+        persons[3] = new Person();
+        persons[3] = persons[0];
+        persons[0] = myPerson;
+        myPerson = persons[2];
+
+        persons[1] = null;
+
+    }
 }
