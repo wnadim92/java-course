@@ -6,6 +6,9 @@ import static org.junit.Assert.assertEquals;
 
 public class PersonTest {
 
+
+
+
     @Test
     public void shouldReturnHelloWorld() {
         Person marcus = new Person();
@@ -45,15 +48,27 @@ public class PersonTest {
     @Test
     public void demonstrateArrays() {
         Person[] persons = new Person[4];
-        Person myPerson = new Person();
-        persons[0] = new Person();
-        persons[2] = new Person();
-        persons[3] = new Person();
-        persons[3] = persons[0];
-        persons[0] = myPerson;
-        myPerson = persons[2];
+        for (int i = 0; i < 4; i++) {
+            persons[i] = new Person();
+            persons[i].printHelloName(""+i);
+        }
 
-        persons[1] = null;
+        int i = 0;
+        for(Person person: persons) {
+            person.printHelloName(""+ i);
+            i++;
+        }
+
+        Person myPerson = new Person();
+        Person myPerson2 = null;
+        final Person[] persons2 = {persons[0], null, persons[1], persons[2], myPerson, myPerson2, persons[3]};
+        persons2[2] = persons[2];
+
+        if (persons2[2].equals(persons[2])) {
+            System.out.println("true");
+        }
 
     }
+
+
 }
