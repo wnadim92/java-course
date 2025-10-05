@@ -66,20 +66,18 @@ public class PersonTest {
         Person myPerson2 = null;
         final Person[] persons2 = {persons[0], null, persons[1], persons[2], myPerson, myPerson2, persons[3]};
 
-        LoggingLevel state = LoggingLevel.PENDING;
-        for (String state: MY_STATE_VALUES) {
-            state = "BLAAA";
+        for (LoggingLevel state: LoggingLevel.values()) {
 
-            if (state.equals("PENDING")) {
-                callMethod();
+            if (state == LoggingLevel.PENDING) {
+                System.out.println("true 1");
             }
 
-            if (state.equals("PROCESSING")) {
-                callMethod();
+            if (state == LoggingLevel.PROCESSING) {
+                System.out.println("true 2");
             }
 
-            if (state.equals("PROCESSED")) {
-                callMethod();
+            if (state == LoggingLevel.PROCESSED) {
+                System.out.println("true 3");
             }
         }
 
