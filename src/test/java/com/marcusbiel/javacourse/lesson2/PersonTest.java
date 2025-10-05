@@ -1,13 +1,16 @@
 package test.java.com.marcusbiel.javacourse.lesson2;
 
+import main.java.com.marcusbiel.javacourse.lesson10.LoggingLevel;
 import main.java.com.marcusbiel.javacourse.lesson2.Person;
 import org.junit.Test;
+
+import java.util.Arrays;
+
 import static org.junit.Assert.assertEquals;
 
 public class PersonTest {
 
-
-
+    static final String[] MY_STATE_VALUES = {"PENDING", "PROCESSING", "PROCESSED"};
 
     @Test
     public void shouldReturnHelloWorld() {
@@ -62,10 +65,22 @@ public class PersonTest {
         Person myPerson = new Person();
         Person myPerson2 = null;
         final Person[] persons2 = {persons[0], null, persons[1], persons[2], myPerson, myPerson2, persons[3]};
-        persons2[2] = persons[2];
 
-        if (persons2[2].equals(persons[2])) {
-            System.out.println("true");
+        LoggingLevel state = LoggingLevel.PENDING;
+        for (String state: MY_STATE_VALUES) {
+            state = "BLAAA";
+
+            if (state.equals("PENDING")) {
+                callMethod();
+            }
+
+            if (state.equals("PROCESSING")) {
+                callMethod();
+            }
+
+            if (state.equals("PROCESSED")) {
+                callMethod();
+            }
         }
 
     }
