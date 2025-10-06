@@ -28,8 +28,8 @@ public class Person {
         return "Hello  " + name;
     }
 
-    public void helloPerson(String name) {
-        System.out.println("hello " + name);
+    public void printHelloName(String name) {
+        System.out.println("Hello  " + name);
     }
 
     public static int numberOfPersons() {
