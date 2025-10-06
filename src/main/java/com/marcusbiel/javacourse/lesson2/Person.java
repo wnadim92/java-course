@@ -28,6 +28,10 @@ public class Person {
         return "Hello  " + name;
     }
 
+    public void helloPerson(String name) {
+        System.out.println("hello " + name);
+    }
+
     public static int numberOfPersons() {
         return personCounter;
     }
