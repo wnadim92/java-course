@@ -3,8 +3,9 @@ package com.marcusbiel.javacourse;
 public class CarSelector {
 
     public static void main(String[] args) {
-        CarService carService = new CarService();
-        carService.process("BMW");
+        for (String arg : args) {
+            new CarService().process("BMW");
+        }
     }
 
 }
