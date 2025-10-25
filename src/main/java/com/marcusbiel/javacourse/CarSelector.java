@@ -8,10 +8,8 @@ public class CarSelector {
             try {
                 carService.process(argument);
             } catch(RuntimeException e) {
-                carService.errorlog(e);
-                e.printStackTrace();
+                System.out.println(e.getMessage());
             }
-
         }
     }
 
