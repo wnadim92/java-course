@@ -8,6 +8,7 @@ public class CarService {
     private final Logger log = LoggerFactory.getLogger(CarService.class);
 
     public void process(String input) {
+        CarState carState = CarState.from(input);
         log.info("processing car {}", input);
     }
 
