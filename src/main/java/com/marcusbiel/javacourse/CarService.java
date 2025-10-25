@@ -9,7 +9,14 @@ public class CarService {
 
     public void process(String input) {
         CarState carState = CarState.from(input);
+        processinglog(input);
+    }
+
+    public void processinglog(String input) {
         log.info("processing car {}", input);
     }
 
+    public void errorlog(RuntimeException e) {
+        log.error("runtime error {}", e);
+    }
 }
