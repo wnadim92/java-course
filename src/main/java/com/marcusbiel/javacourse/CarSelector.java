@@ -5,12 +5,21 @@ public class CarSelector {
     public static void main(String[] arguments) {
         CarService carService = new CarService();
         for (String argument : arguments) {
-            try {
+            if (isValid(argument)) {
                 carService.process(argument);
-            } catch(RuntimeException e) {
-                System.err.println(e.getMessage());
+            } else {
+                System.err.println("ignoring invalid argument" + argument);
             }
         }
+    }
+
+    public static boolean isValid(String argument) {
+        try {
+            CarState carState = CarState.valueOf(argument);
+        } catch(IllegalArgumentException e) {
+            return false;
+        }
+        return true;
     }
 
 }

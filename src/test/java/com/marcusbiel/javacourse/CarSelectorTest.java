@@ -6,7 +6,7 @@ public class CarSelectorTest {
 
     @Test
     public void shouldCallMain() {
-        String[] arguments = {"BMW", "Porsche"};
+        String[] arguments = {"DRIVING", "WAITING", "PARKING", "flying", "jumping"};
         CarSelector.main(arguments);
     }
 }
