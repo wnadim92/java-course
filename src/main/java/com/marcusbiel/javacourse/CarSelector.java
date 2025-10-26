@@ -18,6 +18,8 @@ public class CarSelector {
             CarState carState = CarState.valueOf(argument);
         } catch(IllegalArgumentException e) {
             return false;
+        } finally {
+            System.out.println();
         }
         return true;
     }

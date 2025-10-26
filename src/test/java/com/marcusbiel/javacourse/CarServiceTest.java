@@ -8,6 +8,12 @@ public class CarServiceTest {
     public void shouldDemonstrateLogging() {
         CarService carService = new CarService();
         carService.process("BMW");
+    }
+
+    @Test
+    public void shouldDemonstrateInterfaces() {
+        CarService carService = new CarService();
+        CarService.drive();
 
     }
 

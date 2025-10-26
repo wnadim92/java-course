@@ -7,6 +7,16 @@ public class CarService {
 
     private final Logger log = LoggerFactory.getLogger(CarService.class);
 
+    public static void drive() {
+        BMW bmw = new BMW();
+        Porsche porsche = new Porsche();
+        Mercedes mercedes = new Mercedes();
+
+        bmw.drive();
+        porsche.drive();
+        mercedes.drive();
+    }
+
     public void process(String input) {
         CarState carState = CarState.from(input);
         processinglog(input);

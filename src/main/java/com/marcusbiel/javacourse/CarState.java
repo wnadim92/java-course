@@ -1,7 +1,5 @@
 package com.marcusbiel.javacourse;
 
-import java.io.IOException;
-
 public enum CarState {
     DRIVING, WAITING, PARKING;
 
