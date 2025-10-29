@@ -1,6 +1,6 @@
-package main.java.com.marcusbiel.javacourse.lesson2;
+package com.marcusbiel.javacourse.lesson2;
 
-import main.java.com.marcusbiel.javacourse.lesson3.Name;
+import com.marcusbiel.javacourse.lesson3.Name;
 
 public class Person {
 
