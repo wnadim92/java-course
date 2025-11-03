@@ -4,7 +4,7 @@ public class Lion extends Animal implements Loggable, Printable {
 
     @Override
     public void eat() {
-        System.out.println("dog is eating...");
+        System.out.println("Lion is eating...");
     }
 
     @Override

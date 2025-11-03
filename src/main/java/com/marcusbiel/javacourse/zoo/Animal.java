@@ -4,7 +4,7 @@ public abstract class Animal {
 
     public abstract void eat();
 
-    public void age() {
+    protected void age() {
         System.out.println("age is calculated...");
     }
 }
