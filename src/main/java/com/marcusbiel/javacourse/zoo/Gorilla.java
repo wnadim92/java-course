@@ -1,4 +1,4 @@
 package com.marcusbiel.javacourse.zoo;
 
-public class Gorilla {
+public class Gorilla extends Animal {
 }

@@ -1,4 +1,5 @@
 package com.marcusbiel.javacourse.zoo;
 
-public class Dog {
+public class Dog extends Animal {
+
 }
