@@ -1,6 +1,6 @@
 package com.marcusbiel.javacourse;
 
-public class BMW implements Car {
+public class BMW implements Car, Loggable, Asset, Property {
 
     public void drive() {
         System.out.println("Driving BMW...");
@@ -12,5 +12,10 @@ public class BMW implements Car {
 
     public String owner() {
         return "Marcus";
+    }
+
+    @Override
+    public String message() {
+        return "I am the car";
     }
 }

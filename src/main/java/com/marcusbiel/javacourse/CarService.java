@@ -8,13 +8,10 @@ public class CarService {
     private final Logger log = LoggerFactory.getLogger(CarService.class);
 
     public static void drive() {
-        BMW bmw = new BMW();
-        Porsche porsche = new Porsche();
-        Mercedes mercedes = new Mercedes();
-
-        bmw.drive();
-        porsche.drive();
-        mercedes.drive();
+        Car[] cars = {new BMW(), new Porsche(), new Mercedes(),};
+        for (Car car: cars) {
+            car.drive();
+        }
     }
 
     public void process(String input) {
