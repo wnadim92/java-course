@@ -1,4 +1,4 @@
-package com.marcusbiel.javacourse;
+package com.marcusbiel.javacourse.lesson4;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;

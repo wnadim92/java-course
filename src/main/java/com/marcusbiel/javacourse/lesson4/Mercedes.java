@@ -1,4 +1,4 @@
-package com.marcusbiel.javacourse;
+package com.marcusbiel.javacourse.lesson4;
 
 public class Mercedes implements Car {
 
